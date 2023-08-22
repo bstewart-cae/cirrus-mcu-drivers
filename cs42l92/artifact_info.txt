@@ -1,0 +1,45 @@
+Artifact Info:
+Artifact           : CS42L92 Alt-OS Driver: 4.19.0 - a5cf637613da79e9d7d4fd6c4b2a671e56d312ce
+Test Target MCU SDK: STM32Cube_FW_F4: 1.24.1
+Target toolchain   : GNU Arm Embedded Toolchain: arm-none-eabi-gcc (GNU Tools for Arm Embedded Processors 8-2019-q3-update) 8.3.1 20190703 (release) [gcc-8-branch revision 273027]
+Build system       : make: GNU Make 3.82
+OS                 : Linux: 3.10.0-1160.88.1.el7.x86_64
+Shell              : bash: GNU bash, version 4.2.46(2)-release (x86_64-redhat-linux-gnu)
+Host toolchain     : MinGW GCC: gcc (GCC) 4.8.5 20150623 (Red Hat 4.8.5-44)
+Build Job          : shelley_alt_os_nightly: 778
+Git SHA            : a5cf637613da79e9d7d4fd6c4b2a671e56d312ce
+
+System resources:
+
+Build Configuration 1:
+
+Artifact filename    : libcs42l92.a
+Driver TEXT          : 7626
+Driver BSS           : 0
+Driver DATA          : 136
+Driver Max Stack     : 448 (cs42l92_reset -> cs42l92_patch -> cs42l92_common_patch -> cs42l92_write_block -> regmap_write_block -> GET_BYTE_FROM_WORD)
+
+Artifact filename    : baremetal.elf
+Driver TEXT          : 7260
+Driver BSS           : 244
+Driver DATA          : 136
+
+Artifact filename    : cs42l92_fw_img.o
+Driver TEXT          : 144512
+
+Compiler flags:
+    -mcpu=cortex-m4
+    -mthumb
+    -mfpu=fpv4-sp-d16
+    -mfloat-abi=hard
+    -march=armv7e-m+fp
+    -Os
+    -Werror
+    -Wall
+    -std=gnu11
+    -fno-diagnostics-show-caret
+    -fdata-sections
+    -ffunction-sections
+    -fstack-usage
+    -frecord-gcc-switches
+
